@@ -65,4 +65,15 @@ export class VisiteurService {
       throw error;
     }
   }
+
+  public isJunior(dateEmbauche?: Date | null): boolean {
+    if (!dateEmbauche) {
+      return true;
+    }
+
+    const dateIlYaUnAn = new Date();
+    dateIlYaUnAn.setFullYear(dateIlYaUnAn.getFullYear() - 1);
+
+    return dateEmbauche > dateIlYaUnAn;
+  }
 }

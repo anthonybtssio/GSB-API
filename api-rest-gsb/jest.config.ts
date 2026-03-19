@@ -15,7 +15,7 @@ const config: Config = {
   ],
   globals: {
     'ts-jest': {
-      tsconfig: 'tsconfig.spec.json',
+      tsconfig: 'api-rest-gsb/tsconfig.spec.json',
     },
   },
 
@@ -43,3 +43,4 @@ const config: Config = {
   verbose: true,
 };
 export default config;
+

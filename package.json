@@ -1,11 +1,16 @@
 {
+  "scripts": {
+    "test": "jest --config api-rest-gsb/jest.config.ts --rootDir api-rest-gsb"
+  },
   "dependencies": {
     "express-rate-limit": "^8.2.1"
   },
   "devDependencies": {
     "@types/express-rate-limit": "^6.0.2",
     "@types/jest": "^30.0.0",
-    "jest": "^30.2.0",
+    "@types/mongoose": "^5.11.96",
+    "jest": "^30.3.0",
+    "mongoose": "^9.3.0",
     "ts-jest": "^29.4.6"
   }
 }
